@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-brand-bg: #FFF5F0;
+  --color-brand-surface: #FFE8DC;
+  --color-brand-surface-card: #FFFFFF;
+  --color-brand-text: #1A2E30;
+  --color-brand-fg: #536060;
+  --color-brand-accent: #2A8080;
+  --color-brand-accent-hover: #1f6161;
+  --color-brand-primary: #C04020;
+  --color-brand-primary-hover: #9e3217;
+  --color-brand-border: #E5DCD5;
+}
+
+:root {
+  --bg: #FFF5F0;
+  --surface: #FFE8DC;
+  --text: #1A2E30;
+  --fg: #536060;
+  --accent: #2A8080;
+  --primary: #C04020;
+  --border: #E5DCD5;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: #FFF5F0;
+  color: #1A2E30;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

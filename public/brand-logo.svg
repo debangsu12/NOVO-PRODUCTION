@@ -1,0 +1,107 @@
+<svg width="400" height="420" viewBox="0 0 400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="npSlateGrad2" x1="100" y1="50" x2="300" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#00A3A6" />
+      <stop offset="40%" stopColor="#007780" />
+      <stop offset="85%" stopColor="#00454B" />
+      <stop offset="100%" stopColor="#002E33" />
+    </linearGradient>
+    <linearGradient id="npGlossGrad2" x1="110" y1="60" x2="210" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.4" />
+      <stop offset="50%" stopColor="#5EEAD4" stopOpacity="0.15" />
+      <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
+    </linearGradient>
+    <linearGradient id="npStripeLight2" x1="0" y1="0" x2="160" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#67E8F9" />
+      <stop offset="100%" stopColor="#2DD4BF" />
+    </linearGradient>
+    <linearGradient id="npPlayGrad2" x1="180" y1="90" x2="240" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#BEF264" />
+      <stop offset="50%" stopColor="#84CC16" />
+      <stop offset="100%" stopColor="#4ADE80" />
+    </linearGradient>
+    <linearGradient id="npHingeGrad2" x1="100" y1="30" x2="150" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#2DD4BF" />
+      <stop offset="40%" stopColor="#0D9488" />
+      <stop offset="100%" stopColor="#042F2E" />
+    </linearGradient>
+    <radialGradient id="npGlow2" cx="200" cy="125" r="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#4ADE80" stopOpacity="0.5" />
+      <stop offset="50%" stopColor="#06B6D4" stopOpacity="0.25" />
+      <stop offset="100%" stopColor="#06B6D4" stopOpacity="0" />
+    </radialGradient>
+    <clipPath id="slateClip2">
+      <rect x="120" y="65" width="160" height="130" rx="18" />
+    </clipPath>
+    <clipPath id="stickClip2">
+      <rect x="0" y="0" width="158" height="30" rx="6" />
+    </clipPath>
+    <clipPath id="bottomBarClip2">
+      <path d="M 0 8 C 0 3.6 3.6 0 8 0 L 152 0 C 156.4 0 160 3.6 160 8 L 160 28 L 0 28 Z" />
+    </clipPath>
+    <filter id="shadowPlay2" x="160" y="80" width="80" height="80" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" floodColor="#000000" floodOpacity="0.4" />
+      <feDropShadow dx="0" dy="0" stdDeviation="8" floodColor="#84CC16" floodOpacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Clapperboard Base Slate -->
+  <rect x="120" y="65" width="160" height="130" rx="18" fill="url(#npSlateGrad2)" stroke="#14B8A6" stroke-width="2.5" />
+
+  <g clip-path="url(#slateClip2)">
+    <circle cx="155" cy="155" r="32" fill="#0284C7" fill-opacity="0.35" />
+    <circle cx="230" cy="160" r="36" fill="#0D9488" fill-opacity="0.4" />
+    <circle cx="195" cy="120" r="44" fill="url(#npGlow2)" />
+    <path d="M 120 70 L 280 70 L 210 160 L 120 125 Z" fill="url(#npGlossGrad2)" />
+    <path d="M 125 185 C 165 198, 235 198, 275 185" stroke="#5EEAD4" stroke-width="1.5" stroke-opacity="0.4" fill="none" />
+  </g>
+
+  <!-- Tilted Clapstick -->
+  <g transform="translate(136, 48) rotate(-14)">
+    <g clip-path="url(#stickClip2)">
+      <rect x="0" y="0" width="158" height="30" fill="#004C52" />
+      <polygon points="16,0 36,0 20,30 0,30" fill="url(#npStripeLight2)" />
+      <polygon points="52,0 72,0 56,30 36,30" fill="url(#npStripeLight2)" />
+      <polygon points="88,0 108,0 92,30 72,30" fill="url(#npStripeLight2)" />
+      <polygon points="124,0 144,0 128,30 108,30" fill="url(#npStripeLight2)" />
+    </g>
+    <rect x="0" y="0" width="158" height="30" rx="6" stroke="#14B8A6" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- Stationary Bottom Stick -->
+  <g transform="translate(120, 65)">
+    <path d="M 0 8 C 0 3.6 3.6 0 8 0 L 152 0 C 156.4 0 160 3.6 160 8 L 160 28 L 0 28 Z" fill="#00353A" />
+    <g clip-path="url(#bottomBarClip2)">
+      <polygon points="24,0 44,0 28,28 8,28" fill="url(#npStripeLight2)" />
+      <polygon points="60,0 80,0 64,28 44,28" fill="url(#npStripeLight2)" />
+      <polygon points="96,0 116,0 100,28 80,28" fill="url(#npStripeLight2)" />
+      <polygon points="132,0 152,0 136,28 116,28" fill="url(#npStripeLight2)" />
+    </g>
+    <line x1="0" y1="28" x2="160" y2="28" stroke="#004C52" stroke-width="2" />
+  </g>
+
+  <!-- Left Hinge Bracket -->
+  <path d="M 112 45 C 112 36 120 30 130 30 L 148 30 C 154 30 158 34 158 40 L 158 60 C 158 66 152 72 146 72 L 138 72 C 138 80 138 86 138 90 C 138 96 134 100 128 100 L 122 100 C 116 100 112 96 112 90 Z" fill="url(#npHingeGrad2)" stroke="#2DD4BF" stroke-width="1.5" />
+  <circle cx="124" cy="44" r="3.5" fill="#E2E8F0" stroke="#042F2E" stroke-width="1" />
+  <circle cx="144" cy="44" r="3.5" fill="#E2E8F0" stroke="#042F2E" stroke-width="1" />
+  <circle cx="142" cy="60" r="3.2" fill="#CBD5E1" stroke="#042F2E" stroke-width="1" />
+  <circle cx="124" cy="86" r="3.5" fill="#E2E8F0" stroke="#042F2E" stroke-width="1" />
+
+  <!-- Play Button -->
+  <g filter="url(#shadowPlay2)">
+    <path d="M 182 102 C 182 98.8 185.8 96.9 188.8 98.6 L 222.8 118.6 C 225.5 120.2 225.5 124.0 222.8 125.6 L 188.8 145.6 C 185.8 147.3 182 145.4 182 142.2 Z" fill="url(#npPlayGrad2)" />
+    <path d="M 186 106 L 216 122 L 186 138 Z" stroke="#ECFDF5" stroke-width="1.2" stroke-opacity="0.6" fill="none" />
+  </g>
+
+  <!-- Text: NOVO -->
+  <text x="200" y="270" text-anchor="middle" fill="#00828A" font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="52" letter-spacing="4">NOVO</text>
+
+  <!-- Text: Production -->
+  <text x="200" y="325" text-anchor="middle" fill="#00828A" font-family="'Courier New', monospace" font-weight="800" font-size="38" letter-spacing="1.5">Production</text>
+
+  <!-- Navy Divider Rule -->
+  <rect x="50" y="342" width="300" height="5" rx="2.5" fill="#1B3558" />
+
+  <!-- Text: MULTIMEDIA SPECIALIST in Yellow Script -->
+  <text x="200" y="378" text-anchor="middle" fill="#F5B800" font-family="'Permanent Marker', 'Brush Script MT', cursive, sans-serif" font-weight="bold" font-size="22" letter-spacing="2" font-style="italic">MULTIMEDIA SPECIALIST</text>
+</svg>
